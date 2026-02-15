@@ -7,7 +7,7 @@ from pynput import mouse, keyboard
 class AutoClickerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("AutoClicker Pro")
+        self.root.title("Lunar Autoclicker")
         self.root.geometry("500x700")
         self.root.resizable(False, False)
         
@@ -44,7 +44,7 @@ class AutoClickerApp:
         
         title = tk.Label(
             title_frame,
-            text="AutoClicker Pro",
+            text="Lunar Autoclicker",
             font=("Arial", 32, "bold"),
             bg=self.bg_color,
             fg=self.accent_color
@@ -143,7 +143,7 @@ class AutoClickerApp:
         self.cps_slider = tk.Scale(
             parent,
             from_=1,
-            to=50,
+            to=200,
             variable=self.cps,
             orient="horizontal",
             bg=self.input_bg,
